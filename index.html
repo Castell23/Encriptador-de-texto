@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/mediaqueries.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img src="src/img/Vector.png" alt="">
+    </header>
+
+    <main>
+        <section class="encriptador">
+        
+            <textarea cols="40" rows="6" class="input-texto" placeholder="Tu mensaje es muy importante, encríptalo!"></textarea>
+            
+            <div class="botones">
+                <p>❗ Solo letras minúsculas y sin tildes</p>
+    
+                <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+    
+                <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+    
+            <div class="botones__tablet">
+                <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+    
+                <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+    
+        </section>
+    
+        <section class="encriptacion">
+            
+            <textarea cols="18" rows="8" class="mensaje" id="textoYaEncriptado" readonly="readonly"></textarea>
+    
+            <button class="copiar" id="copy" onclick="copy()">Copiar</button>
+    
+        </section>
+    </main>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>
